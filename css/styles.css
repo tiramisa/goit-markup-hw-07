@@ -71,11 +71,23 @@ textarea {
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 450px;
     margin: 0 auto;
     box-sizing: border-box;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 738px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1170px;
+    }
 }
 
 .container-row {
@@ -340,6 +352,35 @@ textarea {
     row-gap: 40px;
     column-gap: 40px;
 }
+
+@media screen and (max-width:768px) {
+    .address-link {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .address-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .header-phone {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    .header-mail {
+        padding-bottom: 4px;
+    }
+}
+
+
+
 
 .visually-hidden {
     position: absolute;
