@@ -339,6 +339,10 @@ textarea {
 
 .our-team {
     background-color: var(--cloud-color);
+}
+
+
+.our-team-list {
     grid-template-columns: repeat(1, 1fr);
     display: grid;
     row-gap: 72px;
@@ -346,13 +350,13 @@ textarea {
 }
 
 @media screen and (min-width:768px) {
-    .our-team {
+    .our-team-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width:1200px) {
-    .our-team {
+    .our-team-list {
         grid-template-columns: repeat(4, 1fr);
     }
 }
@@ -550,6 +554,19 @@ textarea {
 @media screen and (min-width:1200px) {
     .card-container {
         display: flex;
+    }
+}
+
+.card-img {
+    width: 264px;
+    height: 260px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .card-img {
+        background-image: url('../images/employee_3@2x.jpeg');
     }
 }
 
