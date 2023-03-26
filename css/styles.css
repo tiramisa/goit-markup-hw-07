@@ -444,6 +444,12 @@ textarea {
     .header-mail {
         padding-bottom: 4px;
     }
+
+    .header-mail,
+    .header-phone {
+        font-size: 12px;
+        line-height: 1.33;
+    }
 }
 
 .visually-hidden {
@@ -582,7 +588,6 @@ textarea {
         line-height: 1.2;
     }
 }
-
 
 .text-content,
 .project-title {
