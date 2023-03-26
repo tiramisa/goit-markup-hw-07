@@ -345,6 +345,18 @@ textarea {
     column-gap: 24px;
 }
 
+@media screen and (min-width:768px) {
+    .our-team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .our-team {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .futures-block {
     width: 100%;
     list-style-type: none;
