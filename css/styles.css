@@ -339,6 +339,10 @@ textarea {
 
 .our-team {
     background-color: var(--cloud-color);
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    row-gap: 72px;
+    column-gap: 24px;
 }
 
 .futures-block {
