@@ -112,8 +112,15 @@ textarea {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+@media screen and (min-width:1200px) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 .page-header {
@@ -335,8 +342,27 @@ textarea {
 }
 
 .futures-block {
-    width: 264px;
+    width: 100%;
     list-style-type: none;
+}
+
+.features-list {
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    row-gap: 72px;
+    column-gap: 24px;
+}
+
+@media screen and (min-width:768px) {
+    .features-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .features-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .items-section-projects {
@@ -420,9 +446,6 @@ textarea {
     }
 }
 
-
-
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -482,13 +505,20 @@ textarea {
 
 /* icons */
 .img-futures-bg {
-    background-color: var(--cloud-color);
-    border-radius: 4px;
-    margin-bottom: 8px;
-    height: 112px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
+}
+
+@media screen and (min-width:1200px) {
+    .img-futures-bg {
+        display: block;
+        background-color: var(--cloud-color);
+        border-radius: 4px;
+        margin-bottom: 8px;
+        height: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .img-futures {
@@ -526,12 +556,31 @@ textarea {
 
 .feature-title,
 .project-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: inherit;
+    text-align: center;
     margin-bottom: 8px;
+}
+
+@media screen and (min-width:768px) {
+
+    .feature-title,
+    .project-title {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .feature-title,
+    .project-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
 }
 
 
@@ -540,8 +589,17 @@ textarea {
     line-height: 1.5;
     color: var(--slate-color);
     flex-wrap: wrap;
+    letter-spacing: 0.02em;
     justify-content: space-around;
     margin-bottom: 12px;
+    font-weight: 600;
+}
+
+@media screen and (min-width:1200px) {
+
+    .text-content {
+        font-weight: 400;
+    }
 }
 
 .img-portfolio {
