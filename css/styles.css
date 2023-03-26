@@ -562,13 +562,6 @@ textarea {
     height: 260px;
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .card-img {
-        background-image: url('../images/employee_3@2x.jpeg');
-    }
-}
 
 .img-futures {
     margin: 24px 100px 24px 100px;
