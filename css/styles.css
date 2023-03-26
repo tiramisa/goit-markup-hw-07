@@ -527,6 +527,16 @@ textarea {
     }
 }
 
+.card-container {
+    display: none;
+}
+
+@media screen and (min-width:1200px) {
+    .card-container {
+        display: flex;
+    }
+}
+
 .img-futures {
     margin: 24px 100px 24px 100px;
 }
