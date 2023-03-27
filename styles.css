@@ -295,23 +295,13 @@ textarea {
     .hero-image {
         padding-top: 112px;
         padding-bottom: 112px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero-image {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office@2x.jpg');
-        }
     }
 }
 
 @media screen and (min-width:1200px) {
     .hero-image {
-        padding-top: 188px;
-        padding-bottom: 188px;
-        width: 1440px;
+        padding-top: 192px;
+        padding-bottom: 192px;
     }
 }
 
@@ -713,7 +703,7 @@ textarea {
     display: flex;
     border: 1px solid var(--light-slate-color);
     border-radius: 4px;
-    padding: 16px 16px;
+    padding: 16px 32px;
     outline: transparent;
     justify-content: center;
     transition-duration: 250ms;
@@ -1211,12 +1201,15 @@ footer {
 
 
 .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 80px 40px 40px 40px;
+    padding: 32px;
     background-color: var(--white-color);
     z-index: 999;
     transform: translateX(100%);
@@ -1307,6 +1300,14 @@ footer {
     color: var(--ocean-color);
 }
 
+.link {
+    margin-bottom: 40px;
+}
+
+.mobile-item {
+    margin-bottom: 40px;
+}
+
 .mobile-close {
     height: 24px;
     width: 24px;
@@ -1327,7 +1328,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--iris-color);
 }
 
 .mobile-number {
@@ -1336,7 +1336,10 @@ footer {
     line-height: 40px;
     margin-bottom: 40px;
     color: var(--iris-color);
+    margin-top: 284px;
     display: flex;
+
+
 }
 
 .mobile-link {
