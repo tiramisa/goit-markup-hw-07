@@ -279,7 +279,7 @@ textarea {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-mobile.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -291,10 +291,31 @@ textarea {
     margin: 0 auto;
 }
 
-@media screen and (min-width:769px) {
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
     .hero-image {
-        padding-top: 112px;
-        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-mobile@2x.jpg');
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .hero-image {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-tablet.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-image {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-tablet@2x.jpg');
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-image {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
     }
 
@@ -307,19 +328,11 @@ textarea {
     }
 }
 
-@media screen and (min-width:1200px) {
+@media only screen and (min-width: 1200px) {
     .hero-image {
+        width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
-        width: 1440px;
-    }
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero-image {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office@2x.jpg');
     }
 }
 
@@ -376,7 +389,10 @@ textarea {
 
 @media screen and (min-width:768px) {
     .our-team-list {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 64px;
+        grid-template-columns: repeat(2, 264px);
+        justify-content: center;
+        margin: 0 auto;
     }
 }
 
@@ -1017,7 +1033,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
+    max-width: 408px;
     padding-bottom: 24px;
     padding-top: 72px;
     background-color: var(--bg-modal-color);
@@ -1052,8 +1068,6 @@ footer {
     fill: var(--white-color);
     background-color: var(--ocean-color);
 }
-
-.modal-button {}
 
 .modal-group {
     display: flex;
@@ -1344,10 +1358,21 @@ footer {
     display: flex;
 }
 
+
+@media screen and (max-width:438px) {
+    .mobile-number {
+        font-size: 24px;
+    }
+}
+
 .mobile-link {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     color: var(--slate-color);
     padding-bottom: 48px;
+}
+
+.active-modal-mb {
+    color: var(--iris-color);
 }
