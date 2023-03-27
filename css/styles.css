@@ -330,7 +330,7 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
     .hero-image {
-        width: 1440px;
+        max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
@@ -384,12 +384,12 @@ textarea {
     grid-template-columns: repeat(1, 1fr);
     display: grid;
     row-gap: 72px;
-    column-gap: 24px;
 }
 
 @media screen and (min-width:768px) {
     .our-team-list {
-        gap: 24px 64px;
+        row-gap: 56px;
+        column-gap: 24px;
         grid-template-columns: repeat(2, 264px);
         justify-content: center;
         margin: 0 auto;
